@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>موبایل-shop | Mobile Shop — فروشگاه loisirsweighted موبایل</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ===== Top Bar ===== -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span data-i18n="topbar.shipping">🚚 ارسال رایگان برای خرید بالای ۳۰٬۰۰۰ افغانی</span>
+      <div class="lang-switch">
+        <button id="lang-fa" class="lang-btn active">فارسی</button>
+        <span class="lang-sep">|</span>
+        <button id="lang-en" class="lang-btn">English</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon">📱</span>
+        <span class="logo-text" data-i18n="brand.name">موبایل-shop</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#home" data-i18n="nav.home">خانه</a>
+        <a href="#products" data-i18n="nav.products">محصولات</a>
+        <a href="#categories" data-i18n="nav.categories">دسته‌بندی‌ها</a>
+        <a href="#blog" data-i18n="nav.blog">وبلاگ</a>
+        <a href="#features" data-i18n="nav.features">چرا ما؟</a>
+        <a href="#contact" data-i18n="nav.contact">تماس با ما</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" id="search-btn" aria-label="search">🔍</button>
+        <button class="icon-btn cart-btn" id="cart-btn" aria-label="cart">
+          🛒 <span class="cart-count" id="cart-count">0</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <span class="hero-badge" data-i18n="hero.badge">✨ جدیدترین لوازم جانبی موبایل</span>
+        <h1 data-i18n="hero.title">همه‌چیز برای موبایلت،<br/>یک‌جا و با بهترین قیمت</h1>
+        <p data-i18n="hero.subtitle">از قاب و محافظ صفحه گرفته تا پاوربانک، هندزفری و محصولات دیجیتال — با ضمانت اصالت کالا و ارسال سریع به سراسر کشور.</p>
+        <div class="hero-cta">
+          <a href="#products" class="btn btn-primary" data-i18n="hero.cta1">مشاهده محصولات</a>
+          <a href="#categories" class="btn btn-ghost" data-i18n="hero.cta2">دسته‌بندی‌ها</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><strong>+۵۰۰۰</strong><span data-i18n="hero.stat1">مشتری راضی</span></div>
+          <div class="stat"><strong>+۳۰۰</strong><span data-i18n="hero.stat2">محصول متنوع</span></div>
+          <div class="stat"><strong>٪۱۰۰</strong><span data-i18n="hero.stat3">ضمانت اصالت</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-phone">📱</div>
+        <div class="floating-card fc1">🔋 پاوربانک ۲۰۰۰۰</div>
+        <div class="floating-card fc2">🎧 هندزفری بی‌سیم</div>
+        <div class="floating-card fc3">🛡️ گلس گوشی</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Categories ===== -->
+  <section class="categories" id="categories">
+    <div class="container">
+      <h2 class="section-title" data-i18n="cat.title">دسته‌بندی محصولات</h2>
+      <p class="section-sub" data-i18n="cat.subtitle">بهترین‌ها را در هر دسته پیدا کن</p>
+      <div class="cat-grid">
+        <div class="cat-card"><span class="cat-icon">📱</span><h3 data-i18n="cat.c1">قاب و کاور</h3><p data-i18n="cat.c1d">انواع قاب سیلیکونی، چرمی و ضدضربه</p></div>
+        <div class="cat-card"><span class="cat-icon">🔌</span><h3 data-i18n="cat.c2">شارژر و کابل</h3><p data-i18n="cat.c2d">شارژر سریع و کابل‌های باکیفیت</p></div>
+        <div class="cat-card"><span class="cat-icon">🔋</span><h3 data-i18n="cat.c3">پاوربانک</h3><p data-i18n="cat.c3d">ظرفیت بالا و طراحی Slim</p></div>
+        <div class="cat-card"><span class="cat-icon">🎧</span><h3 data-i18n="cat.c4">هندزفری</h3><p data-i18n="cat.c4d">بی‌سیم و سیمی با صدای باکیفیت</p></div>
+        <div class="cat-card"><span class="cat-icon">🛡️</span><h3 data-i18n="cat.c5">محافظ صفحه</h3><p data-i18n="cat.c5d">گلس و TPU ضدخش و ضدضربه</p></div>
+        <div class="cat-card"><span class="cat-icon">🎮</span><h3 data-i18n="cat.c6">محصولات دیجیتال</h3><p data-i18n="cat.c6d">سکه بازی، بنر و اشتراک اپلیکیشن</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Products ===== -->
+  <section class="products" id="products">
+    <div class="container">
+      <h2 class="section-title" data-i18n="prod.title">محصولات منتخب</h2>
+      <p class="section-sub" data-i18n="prod.subtitle">پرفروش‌ترین‌های این هفته</p>
+      <div class="filter-bar" id="filter-bar">
+        <button class="filter-btn active" data-filter="all" data-i18n="filter.all">همه</button>
+        <button class="filter-btn" data-filter="accessory" data-i18n="filter.accessory">لوازم جانبی</button>
+        <button class="filter-btn" data-filter="digital" data-i18n="filter.digital">دیجیتال</button>
+      </div>
+      <div class="product-grid" id="product-grid"><!-- products rendered by JS --></div>
+    </div>
+  </section>
+
+  <!-- ===== Blog ===== -->
+  <section class="blog" id="blog">
+    <div class="container">
+      <h2 class="section-title" data-i18n="blog.title">آخرین مقالات وبلاگ</h2>
+      <p class="section-sub" data-i18n="blog.subtitle">نکات useful 선 و راهنمای خرید</p>
+      <div class="blog-grid" id="blog-grid"><!-- posts rendered by JS --></div>
+    </div>
+  </section>
+
+  <!-- ===== Features ===== -->
+  <section class="features" id="features">
+    <div class="container">
+      <h2 class="section-title" data-i18n="feat.title">چرا موبایل-shop؟</h2>
+      <div class="feat-grid">
+        <div class="feat-card"><span class="feat-icon">✅</span><h3 data-i18n="feat.f1">ضمانت اصالت کالا</h3><p data-i18n="feat.f1d">همه محصولات اورجینال با هولوگرام اصالت</p></div>
+        <div class="feat-card"><span class="feat-icon">🚚</span><h3 data-i18n="feat.f2">ارسال سریع</h3><p data-i18n="feat.f2d">تحویل ۲۴ تا ۴۸ ساعته به سراسر کشور</p></div>
+        <div class="feat-card"><span class="feat-icon">💳</span><h3 data-i18n="feat.f3">پرداخت امن</h3><p data-i18n="feat.f3d">درگاه پرداخت ایمن بانکی</p></div>
+        <div class="feat-card"><span class="feat-icon">↩️</span><h3 data-i18n="feat.f4">۷ روز ضمانت برگشت</h3><p data-i18n="feat.f4d">در صورت نارضایتی، بدون قید و شرط</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact Form ===== -->
+  <section class="contact" id="contact">
+    <div class="container contact-inner">
+      <div class="contact-info">
+        <h2 class="section-title" style="text-align:right" data-i18n="contact.title">با ما در تماس باش</h2>
+        <p class="section-sub" style="text-align:right" data-i18n="contact.subtitle">سؤال، پیشنهاد یا پیگیری سفارش — فرم را پر کن تا با تو تماس بگیریم.</p>
+        <ul class="contact-list">
+          <li>📞 <span data-i18n="contact.phone">021-12345678</span></li>
+          <li>✉️ info@mobileshop.ir</li>
+          <li>📍 <span data-i18n="contact.address">هرات، بازار موبایل</span></li>
+          <li>🕐 <span data-i18n="contact.hours">شنبه تا پنجشنبه، ۹ صبح تا ۹ شب</span></li>
+        </ul>
+      </div>
+      <form class="contact-form" id="contact-form">
+        <input type="text" id="cf-name" required data-i18n-ph="contact.ph.name" placeholder="نام و نام خانوادگی" />
+        <input type="tel" id="cf-phone" required data-i18n-ph="contact.ph.phone" placeholder="شماره تماس" />
+        <input type="email" id="cf-email" data-i18n-ph="contact.ph.email" placeholder="ایمیل (اختیاری)" />
+        <textarea id="cf-msg" rows="4" required data-i18n-ph="contact.ph.msg" placeholder="پیام شما..."></textarea>
+        <button type="submit" class="btn btn-primary btn-block" data-i18n="contact.send">ارسال پیام</button>
+        <p class="form-success" id="form-success" hidden data-i18n="contact.success">✅ پیام شما با موفقیت ارسال شد!</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3><span class="logo-icon">📱</span> <span data-i18n="brand.name">موبایل-shop</span></h3>
+        <p data-i18n="footer.about">فروشگاه تخصصی Aviation Bobby موبایل و محصولات دیجیتال با بیش از ۵ سال سابقه.</p>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.links">دسترسی سریع</h4>
+        <a href="#home" data-i18n="nav.home">خانه</a>
+        <a href="#products" data-i18n="nav.products">محصولات</a>
+        <a href="#blog" data-i18n="nav.blog">وبلاگ</a>
+        <a href="#contact" data-i18n="nav.contact">تماس با ما</a>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n18n="footer.contact">تماس با ما</h4>
+        <p>📞 021-12345678</p>
+        <p>✉️ info@mobileshop.ir</p>
+        <p>📍 هرات، بازار موبایل</p>
+      </div>
+    </div>
+    <div class="footer-bottom"><span data-i18n="footer.rights">© ۱۴۰۴ موبایل-shop — تمامی حقوق محفوظ است.</span></div>
+  </footer>
+
+  <!-- ===== Cart Drawer ===== -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer">
+    <div class="cart-head">
+      <h3 data-i18n="cart.title">سبد خرید</h3>
+      <button class="cart-close" id="cart-close">✕</button>
+    </div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-foot">
+      <div class="cart-total"><span data-i18n="cart.total">جمع کل:</span> <strong id="cart-total">۰ ؋</strong></div>
+      <button class="btn btn-primary btn-block" data-i18n="cart.checkout">ثبت سفارش</button>
+    </div>
+  </aside>
+
+  <script src="app.js"></script>
+</body>
+</html>

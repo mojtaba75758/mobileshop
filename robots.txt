@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Block the shopping cart drawer content from indexing
+Disallow: /#cart
+
+Sitemap: https://mobileshop.af/sitemap.xml

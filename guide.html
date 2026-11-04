@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>راهنمای تصویری انتشار سایت در گوگل | Mobile Shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    :root { --primary:#2563eb; --accent:#f59e0b; --text:#0f172a; --muted:#64748b; --bg:#f8fafc; --card:#fff; --border:#e2e8f0; }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:'Vazirmatn',sans-serif; background:var(--bg); color:var(--text); line-height:1.8; }
+    .hero { background:linear-gradient(135deg,#1e3a8a,#2563eb); color:#fff; text-align:center; padding:50px 20px; }
+    .hero h1 { font-size:2rem; font-weight:900; margin-bottom:8px; }
+    .hero p { color:#dbeafe; }
+    .container { max-width:860px; margin:0 auto; padding:30px 20px 60px; }
+    .step { background:var(--card); border:1px solid var(--border); border-radius:16px; padding:26px; margin-bottom:28px; box-shadow:0 4px 20px rgba(15,23,42,.06); }
+    .step-head { display:flex; align-items:center; gap:14px; margin-bottom:14px; }
+    .step-num { background:var(--primary); color:#fff; font-weight:800; width:44px; height:44px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:1.2rem; flex-shrink:0; }
+    .step h2 { font-size:1.25rem; font-weight:800; }
+    .step p { color:var(--muted); margin-bottom:8px; }
+    .step ul { margin:10px 20px 14px 0; color:var(--muted); }
+    .step li { margin-bottom:4px; }
+    .step img { width:100%; border-radius:12px; border:1px solid var(--border); margin-top:12px; }
+    .note { background:#fef3c7; border:1px solid #fde68a; color:#92400e; border-radius:12px; padding:14px 18px; font-size:.9rem; margin-bottom:28px; }
+    .code { background:#0f172a; color:#7dd3fc; padding:2px 8px; border-radius:6px; font-size:.85rem; direction:ltr; display:inline-block; }
+    .back { display:inline-block; margin:20px; background:var(--card); border:1px solid var(--border); padding:10px 20px; border-radius:10px; text-decoration:none; color:var(--primary); font-weight:700; }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1>🚀 راهنمای تصویری: چطور سایتت را در گوگل منتشر کنی</h1>
+    <p>۵ قدم ساده — از ساخت حساب GitHub تا ثبت در Google Search Console</p>
+  </div>
+  <a class="back" href="index.html">← برگشت به فروشگاه</a>
+  <div class="container">
+
+    <div class="note">💡 این راهنما assume Monate که سایت را رایگان روی <b>GitHub Pages</b> منتشر می‌کنی — نیازی به خرید هاست نیست!</div>
+
+    <div class="step">
+      <div class="step-head"><span class="step-num">۱</span><h2>ساخت حساب در GitHub</h2></div>
+      <p>به سایت <span class="code">github.com</span> برو و روی دکمه <b>Sign up</b> کلیک کن. با ایمیل خودت یک حساب رایگان بساز.</p>
+      <ul>
+        <li>ایمیل و رمز عبور را وارد کن</li>
+        <li>ایمیل خود را تأیید کن</li>
+      </ul>
+      <img src="guide/step1-github.png" alt="مرحله ۱ - ورود به GitHub" />
+    </div>
+
+    <div class="step">
+      <div class="step-head"><span class="step-num">۲</span><h2>ساخت مخزن (Repository) جدید</h2></div>
+      <p>بعد از ورود، روی <b>New repository</b> کلیک کن و نام مخزن را مثلاً <span class="code">mobileshop</span> بگذار. گزینه <b>Public</b> را انتخاب کن و روی <b>Create repository</b> بزن.</p>
+      <img src="guide/step2-repo.png" alt="مرحله ۲ - ساخت مخزن" />
+    </div>
+
+    <div class="step">
+      <div class="step-head"><span class="step-num">۳</span><h2>آپلود فایل‌های سایت</h2></div>
+      <p>در صفحه مخزن روی <b>Add file → Upload files</b> کلیک کن و این فایل‌ها را از پوشه <span class="code">shop/</span> آپلود کن:</p>
+      <ul>
+        <li><span class="code">index.html</span> — صفحه اصلی</li>
+        <li><span class="code">styles.css</span> و <span class="code">app.js</span></li>
+        <li><span class="code">sitemap.xml</span> و <span class="code">robots.txt</span></li>
+        <li>پوشه <span class="code">guide/</span> (عکس‌های راهنما)</li>
+      </ul>
+      <p>سپس روی <b>Commit changes</b> کلیک کن.</p>
+      <img src="guide/step3-upload.png" alt="مرحله ۳ - آپلود فایل‌ها" />
+    </div>
+
+    <div class="step">
+      <div class="step-head"><span class="step-num">۴</span><h2>فعال‌سازی GitHub Pages</h2></div>
+      <p>به <b>Settings → Pages</b> مخزن برو. در قسمت <b>Source</b> گزینه <b>Deploy from a branch</b> را انتخاب کن، شاخه <b>main</b> و پوشه <b>root</b> را بگذار و <b>Save</b> را بزن.</p>
+      <p>چند دقیقه بعد سایتت روی آدرس زیر آنلاین می‌شود:</p>
+      <p><span class="code">https://نام-کاربری-تو.github.io/mobileshop/</span></p>
+      <img src="guide/step4-pages.png" alt="مرحله ۴ - فعال‌سازی Pages" />
+    </div>
+
+    <div class="step">
+      <div class="step-head"><span class="step-num">۵</span><h2>ثبت سایت در Google Search Console</h2></div>
+      <p>به <span class="code">search.google.com/search-console</span> برو و با حساب谷歌‌ات وارد شو:</p>
+      <ul>
+        <li>روی <b>Add property</b> بزن و آدرس سایتت را وارد کن</li>
+        <li>مالکیت دامنه را با فایل HTML یا رکورد DNS تأیید کن</li>
+        <li>از منوی <b>Sitemaps</b>، آدرس <span class="code">sitemap.xml</span> را ارسال کن</li>
+      </ul>
+      <p>بعد از چند روز، گوگل شروع به ایندکس کردن صفحات سایتت می‌کند! 🎉</p>
+      <img src="guide/step5-gsc.png" alt="مرحله ۵ - Google Search Console" />
+    </div>
+
+    <div class="note">⚠️ <b>یادت نره:</b> بعد از آنلاین شدن سایت، آدرس <span class="code">https://mobileshop.af</span> را در فایل‌های <span class="code">sitemap.xml</span> و <span class="code">robots.txt</span> با آدرس واقعی خودت عوض کن!</div>
+
+  </div>
+</body>
+</html>
